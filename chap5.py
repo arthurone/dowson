@@ -1,7 +1,8 @@
 # Records
 scores = []
-choise = None
-while choise != "0":
+none = None
+menu_point = none
+while menu_point != "0":
     print("""
     Records
     0 - Exit
@@ -9,24 +10,24 @@ while choise != "0":
     2 - Add Records
     3 - Delete Records
     4 - Sort list""")
-    choise = input("Your choise: ")
+    menu_point = input("Your choise: ")
     print()
-    if choise == "0":
+    if menu_point == "0":
         print("GoodBye")
-    elif choise == "1":
+    elif menu_point == "1":
         print("Records")
         for score in scores:
             print(score)
-    elif choise == "2":
-        score = int(input("Enter your record"))
+    elif menu_point == "2":
+        score = int(input("Enter your record: "))
         scores.append(score)
-    elif choise == "3":
-        score = int(input("What are record you want to delete"))
+    elif menu_point == "3":
+        score = int(input("What are record you want to delete: "))
         if score in scores:
             scores.remove(score)
         else:
             print("Result", score, "not find in records")
-    elif choise == "4":
+    elif menu_point == "4":
         scores.sort(reverse=True)
     else:
         print("This point is not in menu")
