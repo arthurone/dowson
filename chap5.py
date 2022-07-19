@@ -1,4 +1,6 @@
 # Records
+# Show work with list
+
 scores = []
 none = None
 menu_point = none
