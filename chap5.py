@@ -1,5 +1,5 @@
 # Records
-# Show work with list
+# Show work with lists
 
 scores = []
 none = None
