@@ -1,0 +1,51 @@
+geek = {"404": "dont know, not informing, from error 404", 
+  "googling":"search in network",
+   "keyboard plague":"trash in your keyboard",
+   "Link rot":"aging hyperlink in webpage",
+   "Percussive Maintenance":"knok on not working hardware to reanimate"
+   "Uninstalling":"Refuse jobber. Most popular in 1990-2000 years"}
+choice = None
+while choice != "0":
+  print("""
+  Translator from Geek to English
+  0 - Exit
+  1 - Find Inerpretation
+  2 - Add Term
+  3 - Change interpretation
+  4 - Delete Term
+  """
+  )
+  choice = input("Your choice: ")
+  print()
+  if choice == "0":
+    print("Goodbuy")
+  elif choice = "1":
+    term = input("Which term you wnt to translate: ")
+    if term in geek:
+      definition = geek[term]
+    else:
+      print("\nSorry, i dont know this term:", term)
+   elif choice == "2":
+    term = input("Which term you want to add: ")
+    if term not in geek:
+      definition = input("\n Enter your interpretation: ")
+      geek[term] = definition
+      print("\nTerm", term, "add in dictionary")
+      else:
+        print("\nThis term exist,try to change this interpretation")
+    elif choice == "3"
+      term = inpu("Which erm you want to edit: ")
+      if term in geek:
+      definition = input("Enter you interpretation: ")
+      geek[term] = definition
+      else:
+        print("\nThis term is not is not exist, try to add him in dictionary")
+    elif choice == "4":
+      term = input("Which term you want to delete: ")
+      del geek[term]
+      print("\nTerm", term,  "is delete")
+      else:
+        print("\nTerm", term "not exist")
+     else:
+      print("Sorry this point not exist in menu")
+     input("\n\nPress Enter to exit")
